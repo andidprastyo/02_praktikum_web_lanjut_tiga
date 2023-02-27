@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\ProgramsController;
+use App\Http\Controllers\NewsController;
 
 /*
 |--------------------------------------------------------------------------
