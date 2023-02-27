@@ -22,4 +22,4 @@ use App\Http\Controllers\ContactUsController;
 Route::get('/',[HomeController::class, 'index']);
 
 // route resource to ContactUsController
-Route::resource('contact-us', ContactUsController::class);
+Route::resource('/contact-us', ContactUsController::class);
