@@ -30,6 +30,9 @@ Route::prefix('/product')->group(function(){
     Route::get('/songs', [ProductsController::class, 'songs']);
 });
 
+// route parameter to NewsController
+Route::get('/news/{id}', [NewsController::class, 'news']);
+
 // route prefix to ProgramsController
 Route::prefix('/program')->group(function(){
     Route::get('/karir', [ProgramsController::class, 'karir']);
