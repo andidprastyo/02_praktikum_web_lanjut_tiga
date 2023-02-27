@@ -22,6 +22,14 @@ use App\Http\Controllers\ProgramsController;
 
 Route::get('/',[HomeController::class, 'index']);
 
+// route prefix to ProductsController
+Route::prefix('/product')->group(function(){
+    Route::get('/games', [ProductsController::class, 'games']);
+    Route::get('/kids', [ProductsController::class, 'kids']);
+    Route::get('/story-books', [ProductsController::class, 'storyBooks']);
+    Route::get('/songs', [ProductsController::class, 'songs']);
+});
+
 // route prefix to ProgramsController
 Route::prefix('/program')->group(function(){
     Route::get('/karir', [ProgramsController::class, 'karir']);
