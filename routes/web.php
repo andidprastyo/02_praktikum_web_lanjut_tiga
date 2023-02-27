@@ -37,5 +37,10 @@ Route::prefix('/program')->group(function(){
     Route::get('/kunjungan-industri', [ProgramsController::class, 'kunjungan_industri']);
 });
 
+// route to about-us
+Route::get('/about-us', function(){
+    return redirect("https://www.educastudio.com/about-us");
+});
+
 // route resource to ContactUsController
 Route::resource('/contact-us', ContactUsController::class);
