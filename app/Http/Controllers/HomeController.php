@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+        // Ke Home Educastudio
         return redirect("https://www.educastudio.com/");
     }
 }
