@@ -8,6 +8,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        echo "Halaman Awal Website";
+        return redirect("https://www.educastudio.com/");
     }
 }
